@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,11 +10,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Open data from{" "}
-          <a href="https://www.facebook.com/dpustudent.dada">DPU stf</a>
-        </h1>
-
+        <img
+          src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/192860862_114739997559773_3868604863336412847_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=e3f864&_nc_eui2=AeFHK3KOe7SONz5ysCo270Fxbi9vvrzA2ppuL2--vMDamhAs4wySYzWNjSgVpvKmqYzSLQw8wUTc-fFX3L3hGKFZ&_nc_ohc=sCVIlbuYUxcAX_HHtTa&_nc_ht=scontent.fbkk5-6.fna&oh=b76ba8efae3193f878cab474f44696b7&oe=610D2AA3"
+          width="1280"
+        ></img>
         <iframe
           className="datastudio"
           width="1280" //1440
@@ -26,13 +26,17 @@ export default function Home() {
       </main>
 
       <footer>
-        {/* <a
+        <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a> */}
+          Powered by{" "}
+          <a className="link" href="https://www.facebook.com/dpustudent.dada">
+            {" "}
+             เด็ก DPU จะไม่ทน
+          </a>
+        </a>
       </footer>
 
       <style jsx>{`
@@ -78,7 +82,15 @@ export default function Home() {
           color: inherit;
           text-decoration: none;
         }
-
+        .link {
+          color: #0070f3;
+          text-decoration: none;
+        }
+        .link:hover,
+        .link:focus,
+        .link:active {
+          text-decoration: underline;
+        }
         .title a {
           color: #0070f3;
           text-decoration: none;
