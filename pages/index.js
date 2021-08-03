@@ -10,15 +10,17 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Open data from <a href="https://www.facebook.com/dpustudent.dada">DPU stf</a>
+          Open data from{" "}
+          <a href="https://www.facebook.com/dpustudent.dada">DPU stf</a>
         </h1>
-            
+
         <iframe
           className="datastudio"
-          width="1440"//1440
-          height="1080"//1080
+          width="1280" //1440
+          height="1080" //1080
           src="https://datastudio.google.com/embed/reporting/fdfe6c09-3e88-475a-b172-a545520bfd67/page/R9nWC"
           frameborder="0"
+          // style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:1440px;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px;border:none;"
           allowfullscreen
         ></iframe>
       </main>
@@ -35,6 +37,7 @@ export default function Home() {
 
       <style jsx>{`
         .container {
+          width: 100%;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
