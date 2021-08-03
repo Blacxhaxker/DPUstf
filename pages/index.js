@@ -15,8 +15,8 @@ export default function Home() {
             
         <iframe
           className="datastudio"
-          width="100%"//1440
-          height="100%"//1080
+          width="1440"//1440
+          height="1080"//1080
           src="https://datastudio.google.com/embed/reporting/fdfe6c09-3e88-475a-b172-a545520bfd67/page/R9nWC"
           frameborder="0"
           allowfullscreen
